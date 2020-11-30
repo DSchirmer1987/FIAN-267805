@@ -14,11 +14,10 @@ import java.util.Properties;
 public class Application {
 
 	public static void main(String[] args) {
-		int k = 11;
-		int l = 5;
-		int m;
-		m = k % l;
+		SumUneven su = new SumUneven(10);
+		su.calculate();
 		
-		System.out.println(m);
+		int hex = 0xf;
+		System.out.println(hex);
 	}
 }
