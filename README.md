@@ -9,7 +9,9 @@ Ein Anwender soll einen Betrag in Cent eingeben. z.B. 256 und Ihre Anwendung gib
 Euro und Cent der Betrag ausmacht.
 
 ## Aufgabe 2: 
-Erstellen Sie eine Konsolen-Anwendung, die folgendes Verhalten hat:
-Ein Anwender soll einen die Länge eines Zeitraums in Sekunden angeben, z.B. 7321 Sekunden. Ihr
-Programm soll dann ausgeben, wie viele Tage, Stunden, Minuten und Sekunden der angegebene
-Zeitraum ausmacht.
+> Erstellen Sie eine Konsolen-Anwendung, die folgendes Verhalten hat:
+> Ein Anwender soll einen die Länge eines Zeitraums in Sekunden angeben, z.B. 7321 Sekunden. Ihr
+> Programm soll dann ausgeben, wie viele Tage, Stunden, Minuten und Sekunden der angegebene
+> Zeitraum ausmacht.
+
+
