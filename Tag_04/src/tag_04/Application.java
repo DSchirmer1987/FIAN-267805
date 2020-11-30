@@ -9,11 +9,16 @@
 
 package tag_04;
 
+import java.util.Properties;
+
 public class Application {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		int k = 11;
+		int l = 5;
+		int m;
+		m = k % l;
+		
+		System.out.println(m);
 	}
-
 }
