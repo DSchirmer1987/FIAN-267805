@@ -8,9 +8,9 @@ In dieser Übersicht werden sie die jeweiligen Aktuellen Aufgaben für den Nachm
 # Aufgaben zum 02.12.2020:
 
 ## Aufgabe 1:
-> Arbeitsblatt "Berechnungen_Verzweigungen_03.pdf"
+> Arbeitsblatt "Tag_05/Aufgaben/Berechnungen_Verzweigungen_03.pdf"
 
 ## Aufgabe 2: 
-> Arbeitsblatt "Strings.pdf"
+> Arbeitsblatt "Tag_05/Aufgaben/Strings.pdf"
 
 ### !Beachten Sie dabei, dass beide Aufgaben eigene Klassen sind!
