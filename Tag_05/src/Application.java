@@ -1,6 +1,8 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
+import aufgaben.BooleanWerte;
+
 /**
  * Daniel Schirmer
  *
@@ -43,7 +45,10 @@ public class Application {
 //		PirateSpeechGenerator psg = new PirateSpeechGenerator();
 //		psg.ausgebenBisEnde();
 		
-		PirateSpeechGenerator.pirate();
+//		PirateSpeechGenerator.pirate();
+		
+		BooleanWerte bw = new BooleanWerte();
+		bw.booleanAusgeben();
 	}
 
 }
