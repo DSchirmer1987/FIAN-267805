@@ -25,6 +25,16 @@ public class Application {
 //		s.calculateDaysHoursMinutes();
 //		System.out.println(s);
 		
+//		String string1 = "Anna";
+//		String string2 = "Bertha";
+//		String string3 = "Christa";
+//		
+//		System.out.println(string1.compareTo(string2));
+//		System.out.println(string3.compareTo(string1));
+		
+		BMIRechner BMIr = new BMIRechner();
+		BMIr.werteEingeben();
+		System.out.println(BMIr.BMIberechnung());
 	}
 
 }
