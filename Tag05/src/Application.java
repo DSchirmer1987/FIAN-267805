@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 /**
@@ -18,11 +19,12 @@ public class Application {
 //		ec.umrechnen();
 //		System.out.println(ec);
 //		sc.close();
+//		
+//		Seconds s = new Seconds();
+//		s.inputSeconds();
+//		s.calculateDaysHoursMinutes();
+//		System.out.println(s);
 		
-		Seconds s = new Seconds();
-		s.inputSeconds();
-		s.calculateDaysHoursMinutes();
-		System.out.println(s);
 	}
 
 }
