@@ -32,9 +32,13 @@ public class Application {
 //		System.out.println(string1.compareTo(string2));
 //		System.out.println(string3.compareTo(string1));
 		
-		BMIRechner BMIr = new BMIRechner();
-		BMIr.werteEingeben();
-		System.out.println(BMIr.BMIberechnung());
+//		BMIRechner BMIr = new BMIRechner();
+//		BMIr.werteEingeben();
+//		System.out.println(BMIr.BMIberechnung());
+		
+		Rabattrechner r = new Rabattrechner();
+		r.werteEingeben();
+		System.out.println(r.ausrechnenGesamtpreis());
 	}
 
 }
