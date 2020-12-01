@@ -36,9 +36,14 @@ public class Application {
 //		BMIr.werteEingeben();
 //		System.out.println(BMIr.BMIberechnung());
 		
-		Rabattrechner r = new Rabattrechner();
-		r.werteEingeben();
-		System.out.println(r.ausrechnenGesamtpreis());
+//		Rabattrechner r = new Rabattrechner();
+//		r.werteEingeben();
+//		System.out.println(r.ausrechnenGesamtpreis());
+		
+//		PirateSpeechGenerator psg = new PirateSpeechGenerator();
+//		psg.ausgebenBisEnde();
+		
+		PirateSpeechGenerator.pirate();
 	}
 
 }
