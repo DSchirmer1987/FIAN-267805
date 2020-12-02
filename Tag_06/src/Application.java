@@ -10,8 +10,10 @@
 public class Application {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		Auto automobil = new Auto();
+		BMW bmw = new BMW(5.0f);
+		BMW bmw2 = new BMW(bmw);
+		
 	}
 
 }
