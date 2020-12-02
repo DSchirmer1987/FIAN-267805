@@ -20,7 +20,4 @@ public class Auto{
 	public Auto() {
 		super();
 	}
-	
-	
-	
 }
