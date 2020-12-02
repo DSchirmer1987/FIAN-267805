@@ -2,6 +2,8 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 import aufgaben.BooleanWerte;
+import aufgaben.Kennwort;
+import aufgaben.StringAufgaben;
 
 /**
  * Daniel Schirmer
@@ -46,9 +48,20 @@ public class Application {
 //		psg.ausgebenBisEnde();
 		
 //		PirateSpeechGenerator.pirate();
+//		
+//		BooleanWerte bw = new BooleanWerte();
+//		bw.booleanAusgeben();
 		
-		BooleanWerte bw = new BooleanWerte();
-		bw.booleanAusgeben();
+//		StringAufgaben StringA = new StringAufgaben();
+//		System.out.println(StringA.ausgabe());
+//		StringA.einlesenUndAusgeben();
+		
+//		char buchstabe = 'a';
+//		System.out.println( (int)buchstabe );
+		
+		Kennwort kennwort = new Kennwort();
+		kennwort.einlesen();
+		kennwort.kennwortPruefen();
 	}
 
 }
