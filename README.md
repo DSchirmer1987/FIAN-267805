@@ -5,10 +5,10 @@ In dieser Übersicht werden sie die jeweiligen Aktuellen Aufgaben für den Nachm
 ### !Beachten Sie dabei, dass alle Aufgaben eigene Klassen sind!
 ### !Verwenden Sie sinnvolle und aussagekräftige Namen für die Klassen, Attribute und Methoden!
 
-# Aufgaben zum 03.12.2020:
+# Aufgaben zum 04.12.2020:
 
 ## Aufgabe 1:
-> Arbeitsblatt "Tag_06/Aufgaben/Klassen Objekte II.pdf"
+> Arbeitsblatt "Tag_07/Aufgaben/Vererbung I.pdf"
 
-
-### !Beachten Sie dabei, dass beide Aufgaben eigene Klassen sind!
+## Aufgabe 2:
+> Arbeitsblatt "Tag_07/Aufgaben/Vererbung II.pdf"
