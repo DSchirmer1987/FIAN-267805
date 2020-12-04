@@ -8,7 +8,5 @@ In dieser Übersicht werden sie die jeweiligen Aktuellen Aufgaben für den Nachm
 # Aufgaben zum 04.12.2020:
 
 ## Aufgabe 1:
-> Arbeitsblatt "Tag_07/Aufgaben/Vererbung I.pdf"
+> Arbeitsblatt "Tag_08/Aufgaben/Polymorphie - Geometrie.pdf"
 
-## Aufgabe 2:
-> Arbeitsblatt "Tag_07/Aufgaben/Vererbung II.pdf"
