@@ -30,5 +30,4 @@ public class Lamm extends Schaf {
 		return "Lamm [augenfarbe=" + augenfarbe + ", getName()=" + getName() + ", getFarbe()=" + getFarbe()
 				+ ", getGewicht()=" + getGewicht() + "]";
 	}
-	
 }

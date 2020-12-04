@@ -9,44 +9,29 @@
 
 package bauernhofsimulator;
 
-public class Schwein {
-	private String name;
-	private String farbe;
-	private double gewicht;
-	
+import bauernhofsimulator.fauna.ATier;
+import bauernhofsimulator.flora.APflanze;
+
+public class Schwein extends ATier{
 	public Schwein(String name, String farbe, double gewicht) {
-		super();
-		this.name = name;
-		this.farbe = farbe;
-		this.gewicht = gewicht;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public String getFarbe() {
-		return farbe;
-	}
-
-	public void setFarbe(String farbe) {
-		this.farbe = farbe;
-	}
-
-	public double getGewicht() {
-		return gewicht;
-	}
-
-	public void setGewicht(double gewicht) {
-		this.gewicht = gewicht;
+		this.setName(name);
+		this.setFarbe(farbe);
+		this.setGewicht(gewicht);
 	}
 
 	@Override
 	public String toString() {
-		return "Schwein [name=" + name + ", farbe=" + farbe + ", gewicht=" + gewicht + "]";
+		return "Schwein [getName()=" + getName() + ", getFarbe()=" + getFarbe() + ", getGewicht()=" + getGewicht()
+				+ "]";
+	}
+
+	@Override
+	public void machGeraeusch() {
+		System.out.println("Oink!");		
+	}
+
+	@Override
+	public void fressen(APflanze pflanze) {
+		pflanze.wirdGefressen();
 	}
 }
