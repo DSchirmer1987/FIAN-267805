@@ -18,8 +18,26 @@ public class Pkw extends Fahrzeug {
 		System.out.print("Geben Sie die Modellbezeichnung ein: ");
 		modellBezeichnung = scanner.next();
 	}
-	
-	public void print(){
 		
+	public String getFahrzeugtyp() {
+		return fahrzeugtyp;
+	}
+
+	public void setFahrzeugtyp(String fahrzeugtyp) {
+		this.fahrzeugtyp = fahrzeugtyp;
+	}
+
+	public String getModellBezeichnung() {
+		return modellBezeichnung;
+	}
+
+	public void setModellBezeichnung(String modellBezeichnung) {
+		this.modellBezeichnung = modellBezeichnung;
+	}
+
+	public void print(){
+		super.print();
+		System.out.println("Fahrzeugtyp = " + this.fahrzeugtyp);
+		System.out.println("Modellbezeichnung = " + this.modellBezeichnung);
 	}
 }
