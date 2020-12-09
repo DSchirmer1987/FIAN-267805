@@ -9,18 +9,15 @@
 
 package layouts;
 
-import java.awt.FlowLayout;
-
 import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JFrame;
 
-public class FlowLayoutDemo {
-	public static void main(String[] args) {
-		JFrame frame = new JFrame("FlowLayout");
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		
-		
+public class MyDemoFrame extends JFrame{
+	public MyDemoFrame(String title) {
+		this.setTitle(title);
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+			
 		JComboBox<String> auswahl = new JComboBox<String>();
 		auswahl.addItem("Erste Wahl");
 		auswahl.addItem("Zweite Wahl");
@@ -30,12 +27,10 @@ public class FlowLayoutDemo {
 		JButton button3 = new JButton("Button");
 		JButton button4 = new JButton("Button");
 		
-		frame.add(auswahl);
-		frame.add(button);
-		frame.add(button2);
-		frame.add(button3);
-		frame.add(button4);
-		frame.setSize(200, 500);
-		frame.setVisible(true);
+		this.add(auswahl);
+		this.add(button);
+		this.add(button2);
+		this.add(button3);
+		this.add(button4);
 	}
 }
