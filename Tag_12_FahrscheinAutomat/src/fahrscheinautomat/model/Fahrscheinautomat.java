@@ -10,5 +10,5 @@
 package fahrscheinautomat.model;
 
 public class Fahrscheinautomat {
-
+	// Methoden für bezahlen, wechselgeld ausgeben, reset und dergleichen
 }
