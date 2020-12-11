@@ -13,6 +13,8 @@ import javax.swing.JButton;
 import javax.swing.border.BevelBorder;
 
 public class MyButton extends JButton {
+	
+	private int intWert;
 
 	public MyButton(String title, String name) {
 		this.setText(title);

@@ -10,17 +10,33 @@
 package fahrscheinautomat.controller;
 
 import java.awt.BorderLayout;
+import java.awt.Component;
+import java.awt.Container;
 import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
+import javax.swing.JButton;
 import javax.swing.JLabel;
 
+import fahrscheinautomat.model.Fahrschein;
+import fahrscheinautomat.model.Fahrscheinautomat;
 import fahrscheinautomat.view.MyButton;
 import fahrscheinautomat.view.MyFrame;
 import fahrscheinautomat.view.MyLabel;
 import fahrscheinautomat.view.MyPanel;
 
-public class GUIController {
+public class GUIController implements ActionListener{
+	
+	Fahrscheinautomat fahrscheinautomat;
 	public GUIController() {
+		this.fahrscheinautomat = new Fahrscheinautomat();
+		this.fahrscheinautomat.addFahrschein(new Fahrschein('K', 140));
+		this.fahrscheinautomat.addFahrschein(new Fahrschein('A', 230));
+		this.fahrscheinautomat.addFahrschein(new Fahrschein('B', 470));
+		this.fahrscheinautomat.addFahrschein(new Fahrschein('C', 960));
+		this.fahrscheinautomat.addFahrschein(new Fahrschein('D', 1140));
+		
 		MyFrame frame = new MyFrame("Fahrscheinautomat");
 		frame.setLayout(new BorderLayout(5,5));
 		
@@ -50,12 +66,32 @@ public class GUIController {
 		muenzPanel.add(new MyButton("2 Cent", "2"));
 		muenzPanel.add(new MyButton("1 Cent", "1"));
 		
-		
 		frame.add(label);
 		frame.add(fahrscheinPanel,BorderLayout.WEST);
 		frame.add(muenzPanel, BorderLayout.EAST);
 		frame.add(new JLabel(" "), BorderLayout.SOUTH);
 		frame.setSize(500, 500);
+		
+		this.getElements(frame);
+		
 		frame.setVisible(true);
+	}
+	
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		System.out.println("Action performed");
+	}
+	
+	private void getElements(Component rootComp) {
+		
+		Container component = (Container) rootComp;
+		
+		for(Component innerComp : component.getComponents()) {
+			getElements(innerComp);
+			
+			if(innerComp instanceof JButton) {
+				((JButton) innerComp).addActionListener(this);
+			}
+		}
 	}
 }
