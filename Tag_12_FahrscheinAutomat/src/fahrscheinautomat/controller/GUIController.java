@@ -80,6 +80,9 @@ public class GUIController implements ActionListener{
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		System.out.println("Action performed");
+		JButton b = (JButton) e.getSource();
+		System.out.println(b.getText());
+		System.out.println(b.getName());
 	}
 	
 	private void getElements(Component rootComp) {
