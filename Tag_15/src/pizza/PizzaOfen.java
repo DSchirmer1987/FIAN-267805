@@ -11,7 +11,7 @@ package pizza;
 
 import java.util.ArrayList;
 
-public class PizzaOfen {
+public class PizzaOfen implements Pizza{
 	ArrayList<Pizza> pizza;
 	
 	public PizzaOfen() {
