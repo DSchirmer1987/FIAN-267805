@@ -102,7 +102,7 @@
   </class>  
   <class id="12" language="java" name="pizza.PizzaOfen" project="Tag_15" file="/Tag_15/src/pizza/PizzaOfen.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="207" width="181" x="559" y="334"/>    
+    <position height="207" width="181" x="516" y="334"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -137,10 +137,10 @@
     <end type="SOURCE" refId="2"/>    
     <end type="TARGET" refId="1"/>  
   </realization>  
-  <realization id="20">    
-    <end type="SOURCE" refId="12"/>    
-    <end type="TARGET" refId="1"/>  
-  </realization>  
+  <generalization id="20">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="2"/>  
+  </generalization>  
   <association id="21">    
     <end type="SOURCE" refId="12" navigable="false">      
       <attribute id="22" name="pizza"/>      
@@ -150,19 +150,19 @@
     <display labels="true" multiplicity="true"/>  
   </association>  
   <generalization id="24">    
-    <end type="SOURCE" refId="6"/>    
-    <end type="TARGET" refId="2"/>  
-  </generalization>  
-  <generalization id="25">    
     <end type="SOURCE" refId="10"/>    
     <end type="TARGET" refId="8"/>  
   </generalization>  
-  <generalization id="26">    
+  <generalization id="25">    
     <end type="SOURCE" refId="5"/>    
     <end type="TARGET" refId="2"/>  
   </generalization>  
-  <realization id="27">    
+  <realization id="26">    
     <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="1"/>  
+  </realization>  
+  <realization id="27">    
+    <end type="SOURCE" refId="12"/>    
     <end type="TARGET" refId="1"/>  
   </realization>  
   <generalization id="28">    
