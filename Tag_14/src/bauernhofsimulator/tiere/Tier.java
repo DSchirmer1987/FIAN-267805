@@ -76,7 +76,8 @@ public class Tier implements Kaufbar {
 		
 	}
 	
-	public void aufziehen() {
+	public void aufziehen() 
+	{
 		
 	}
 
