@@ -20,7 +20,7 @@ import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 
 public class DateiDemo {
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) throws IOException{
 		File file = new File("D:\\readmeToo.txt");
 		System.out.println(file.exists());
 		System.out.println(file.isFile());
@@ -33,6 +33,7 @@ public class DateiDemo {
 //		for (File file2 : dateien) {
 //			System.out.println(file2.isDirectory());
 //		}
+		
 		
 		try {
 			file.createNewFile();

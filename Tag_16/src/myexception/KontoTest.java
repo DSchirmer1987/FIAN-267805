@@ -26,7 +26,11 @@ public class KontoTest {
 //			// TODO Auto-generated catch block
 //			e.printStackTrace();
 //		}
-
+		
+	}
+	
+	public static void abholen(Konto k1) throws NegativeSaldoException {
+		k1.geldAbheben(50000);
 	}
 
 }

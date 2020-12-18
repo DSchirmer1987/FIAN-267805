@@ -19,6 +19,17 @@ public class PaketKlasse {
 	public PaketKlasse() {
 		this(3,3,3,3);
 	}
+	
+	
+
+
+	@Override
+	protected void finalize() throws Throwable {
+		// TODO Auto-generated method stub
+		super.finalize();
+	}
+
+
 
 
 	private PaketKlasse(int zahl1, int zahl2, int zahl3, int zahl4) {
