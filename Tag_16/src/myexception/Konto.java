@@ -10,7 +10,7 @@
 package myexception;
 
 public class Konto {
-	private double saldo;
+	public double saldo;
 
 	public Konto(double saldo) {
 		super();
@@ -26,7 +26,11 @@ public class Konto {
 	}
 
 	public void setSaldo(double saldo) {
-		this.saldo = saldo;
+		if(saldo > 500000) {
+			this.meldung();
+		} else {
+			this.saldo = saldo;
+		}
 	}
 	
 	public void geldAbheben(double menge) throws NegativeSaldoException{
@@ -35,6 +39,10 @@ public class Konto {
 		} else {
 			this.setSaldo(getSaldo() - menge);
 		}
+	}
+	
+	private void meldung() {
+		System.out.println("Für so viel Geld bitte termin vereinbaren");
 	}
 
 	@Override

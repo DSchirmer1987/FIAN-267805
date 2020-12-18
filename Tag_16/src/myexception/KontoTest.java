@@ -15,15 +15,17 @@ public class KontoTest {
 		Konto k1 = new Konto();
 		Konto k2 = new Konto(3000.0);
 		
+		k1.setSaldo(650000);
+		k1.saldo = 650000;
 		System.out.println(k1);
 		System.out.println(k2);
 		
-		try {
-			k1.geldAbheben(500);
-		} catch (NegativeSaldoException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+//		try {
+//			k1.geldAbheben(500);
+//		} catch (NegativeSaldoException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
 
 	}
 
