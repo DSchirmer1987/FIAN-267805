@@ -48,5 +48,13 @@ public class Konto {
 	@Override
 	public String toString() {
 		return "Konto [saldo=" + saldo + "]";
-	}	
+	}
+
+	@Override
+	protected void finalize() throws Throwable {
+		super.finalize();
+		System.out.println("Finalize");
+	}
+	
+	
 }
