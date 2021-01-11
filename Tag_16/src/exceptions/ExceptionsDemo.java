@@ -31,5 +31,4 @@ public class ExceptionsDemo {
 	public static void werfen() throws IllegalArgumentException{
 		throw new IllegalArgumentException();
 	}
-
 }

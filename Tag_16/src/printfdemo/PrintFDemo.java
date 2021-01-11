@@ -20,7 +20,7 @@ public class PrintFDemo {
 		
 		Formatter formatter = new Formatter(Locale.FRANCE);
 		
-		formatter.format("%s %3.2f€\n",text,11123.45f);
+		formatter.format("%s %.10f€\n",text,11123.4500f);
 		System.out.println(formatter.toString());
 		System.out.println("Ende");
 		
