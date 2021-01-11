@@ -34,6 +34,9 @@ public class Repeat {
 		
 		DateTimeFormatter format1 = DateTimeFormatter.ofPattern("dd'.'MM'.'yyyy' - 'HH':'m':'s");
 		System.out.println(datetime1.format(format1));
+		
+		System.out.println("Argument 1: " + args[0]);
+		System.out.println("Argument 2: " + args[1]);
 	}
 
 }
