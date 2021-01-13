@@ -46,6 +46,11 @@
     color:red;
     text-align: center;
 }
+
+.menu ul #home:hover{
+    cursor: pointer;
+}
+
 /* Mobile Phone */
 [class*="col-"]{
     width: 100%;
