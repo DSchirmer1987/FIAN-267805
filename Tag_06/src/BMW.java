@@ -7,7 +7,7 @@
  *
  */
 
-public class BMW extends Auto{
+public class BMW extends Auto implements java.io.Serializable{
 	public String farbe;
 
 	public BMW() {
