@@ -7,6 +7,13 @@
 </head>
 <body>
     <?php
+        include "classes/auto.php";
+
+        $auto = new Auto("Meins", "Passat", 1987, "Rot");
+        var_dump($auto);
+        echo "<br>";
+        print_r($auto);
+        echo "<br>";
         function schreibeNachricht(){
             echo "Dies ist eine Nachricht<br>";
         }
