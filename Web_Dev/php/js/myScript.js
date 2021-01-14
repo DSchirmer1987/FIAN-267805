@@ -9,6 +9,8 @@ document.addEventListener("DOMContentLoaded", function(e){
     // }
     document.getElementById("myButton").addEventListener("click", function(){changeColor(document.getElementsByClassName("footer")[0],"red")});
     document.getElementById("home").addEventListener("click", loadDocument);
+    document.getElementById("php").addEventListener('click', function(){window.location.assign("myphp.php")})
+    document.getElementById("forms").addEventListener('click', function(){window.location.assign("forms.php")})
 
     console.log("Screen Width:" + screen.width);
     console.log("Screen Height:" + screen.height);

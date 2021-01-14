@@ -18,8 +18,8 @@
             <div class="col-3 col-s-3 menu">
                 <ul>
                     <li id='home'>Home</li>
-                    <li>List Item 2</li>
-                    <li>List Item 3</li>
+                    <li id='php'>My PHP</li>
+                    <li id="forms">Formular</li>
                     <li>List Item 4</li>
                     <li><button type="button" id="myButton">Farbwechsel</button></li>
                 </ul>
