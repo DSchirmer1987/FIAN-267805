@@ -31,9 +31,13 @@
     <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>" method="post">
         Name: <input type="text" name="name" id="name" required><br>
         E-Mail: <input type="text" name="email" id="email"><span><?=$email_error?></span><br>
+        <!-- Website Input -->
+        <!-- Kommentar Textfeld <Textarea>-->
+        <!-- Land Input -->
+        <!-- Geschlecht Radio Buttons <input type="radio" value="">-->
         <input type="submit" value="Absenden">
     </form>
-    <h3>Die daten: </h3>
+    <h3>Die Daten: </h3>
     Name: <?=$name?><br>
     E-Mail <?=$email?> <br>
 </body>
