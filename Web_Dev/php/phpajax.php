@@ -24,6 +24,7 @@
                 </ul>
             </div>
             <div class="col-6 col-s-9" id="main">
+                <canvas id="clock" width="200" height="200" style="background-color:#333"></canvas>
             </div>
             <div class="col-3 col-s-12">
                 <div class="aside">
