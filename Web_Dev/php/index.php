@@ -9,6 +9,8 @@
         <link rel="stylesheet" href="css/responsive.css">
         <title>Responsive Website</title>
         <script src="js/myScript.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/myQuery.js"></script>
     </head>
     <body>
         <div class="header">
@@ -20,7 +22,7 @@
                     <li id='home'>Home</li>
                     <li id='php'>My PHP</li>
                     <li id="forms">Formular</li>
-                    <li>List Item 4</li>
+                    <li id="database">Datenbankabfrage mit AJAX</li>
                     <li><button type="button" id="myButton">Farbwechsel</button></li>
                 </ul>
             </div>

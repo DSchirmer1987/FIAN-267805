@@ -8,7 +8,6 @@ CN;China;3
 DE;Germany;1
 DK;Denmark;1
 EG;Egypt;4
-EN;England;1
 FR;France;1
 HK;HongKong;3
 IL;Israel;4
