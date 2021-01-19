@@ -4,6 +4,9 @@
         $data = array();
         $name = $email = $website = $message = "";
 
+        // Trim = Enfernt leerzeichen am anfang und ende
+        // stripslashes = Entfernt slashes (/ oder \)
+        // htmlspecialchars = Wandelt html-tags in html-entities um.
         function text_input($data){
             $data = trim($data);
             $data = stripslashes($data);
