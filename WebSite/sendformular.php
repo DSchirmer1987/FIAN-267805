@@ -53,6 +53,7 @@
                 $sql = "INSERT INTO messages(Name, Message, EMail) VALUES('$name', '$message', '$email')";
                 // Ausführen des SQL-Befehles
                 $conn->exec($sql);
+                // Holen der zuletzt eingefügten ID der Datenbank und abspeichern in einem Array
                 $data['Last_ID'] = $conn->lastInsertId();
             }
 
