@@ -48,14 +48,19 @@
             $conn = null;
 
             function addMessage($conn){
+                // global keyword für den Zugriff auf Variablen ausserhalb der function. s. Zeile 5
                 global $name, $message, $email;
                 $sql = "INSERT INTO messages(Name, Message, EMail) VALUES('$name', '$message', '$email')";
+                // Ausführen des SQL-Befehles
                 $conn->exec($sql);
                 $data['Last_ID'] = $conn->lastInsertId();
             }
 
             try {
+                // Baut eine Verbindung über PDO zur Datenbank auf.
+                // PDO = PHP Data Object
                 $conn = new PDO("mysql:host=$severname;dbname=website", $username, $password);
+                // Setzen des Errormodus auf Exceptions, d.h. nur Exceptions werden ausgegeben
                 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
                 addMessage($conn);
             } catch (PDOException $e) {
