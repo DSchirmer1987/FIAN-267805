@@ -9,9 +9,15 @@ $(function(){
     });
     $('#home').click(function(){
         $(location).attr('href', '/');
-    })
+    });
+    $('#messages').click(function(){
+        $(location).attr('href', 'messages.php');
+    });
+    $('#upload').click(function(){
+        $(location).attr('href', 'uploadForm.php');
+    });
 
-    $('form').submit(function(event){
+    $('#form_send').click(function(event){
         var formData = {
             'name' : $('input[name=name]').val(),
             'email' : $('input[name=email]').val(),

@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,6 +27,10 @@
                 Handelsregister: HR B124 <br>
                 Steuer-ID: 123456789 <br>
             </address>
+            <?php 
+                print_r($_SESSION);
+                print_r($_COOKIE);
+            ?>
         </div>
         <div class="col-3">
             <div class="aside">
