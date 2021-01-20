@@ -1,0 +1,82 @@
+<!-- !DOCTYPE html - Angabe für den Browser, dass es HTML5 ist -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Zeichensatz (UTF-8 für Umlaute) -->
+    <meta charset="UTF-8">
+    <!-- Viewport - Um die Seite auf die Breite des User-Gerätes zu skalieren -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Einbinden von CSS -->
+    <!-- Fontawesome Icons laden -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+    <link rel="stylesheet" href="css/beispiel.css">
+    <!-- Einbinden von JavaScript / JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/beispiel.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="topnav" id="nav">
+        <a href="#home" class="active"><i class="fas fa-home"></i> Home</a>
+        <a href="#news"><i class="far fa-newspaper"></i> News</a>
+        <a href="#contact"><i class="fas fa-envelope"></i> Kontakt</a>
+        <a href="#impressum"><i class="fas fa-id-card"></i> Impressum</a>
+        <a href="javascript:void(0);" class="icon" onclick="openNav()"><i class="fas fa-bars"></i></a>
+    </div>
+    <button class="accordion">Java-Kurse</button>
+    <div class="accordion-panel">
+        <div class="row">
+            <div class="card-column">
+                <div class="card">
+                    <h1>Java-Kurs I</h1>
+                    <p class="price">249,99€</p>
+                    <p>Ein Kurs über Java</p>
+                </div>
+            </div>
+            <div class="card-column">
+                <div class="card">
+                    <h1>Java-Kurs II</h1>
+                    <p class="price">149,99€</p>
+                    <p>Ein Kurs über Java</p>
+                </div>
+            </div>
+            <div class="card-column">
+                <div class="card">
+                    <h1>Java-Kurs III</h1>
+                    <p class="price">149,99€</p>
+                    <p>Ein Kurs über Java</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="accordion">PHP-Kurse</button>
+    <div class="accordion-panel">
+        <div class="row">
+            <div class="card-column">
+                <div class="card">
+                    <h1>PHP-Kurs I</h1>
+                    <p class="price">249,99€</p>
+                    <p>Ein Kurs über PHP</p>
+                </div>
+            </div>
+            <div class="card-column">
+                <div class="card">
+                    <h1>PHP-Kurs II</h1>
+                    <p class="price">149,99€</p>
+                    <p>Ein Kurs über PHP</p>
+                </div>
+            </div>
+            <div class="card-column">
+                <div class="card">
+                    <h1>PHP-Kurs III</h1>
+                    <p class="price">149,99€</p>
+                    <p>Ein Kurs über PHP</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="display: block; border: 1px solid black;"> Display Block</div>
+    <div style="display: inline; border: 1px solid black;"> Display Inline</div>
+    <div class="footer">Unser Footer</div>
+</body>
+</html>

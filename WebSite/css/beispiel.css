@@ -1,0 +1,212 @@
+/* Gilt für alle Elemente */
+*{
+    /* box-sizing = Definiert wie die Höhen und Breiten berechnet werden und ob paddings und border inkludiert werden sollen */
+    /* content-box : Standart ohne padding und border */
+    /* border-box: Beinhaltet paddings und border */
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+}
+/* Angabe für die Navigationsleiste */
+.topnav{
+    background-color: black;
+    /* Overflow: Ist für die Anzeige von Scrollbalken */
+    overflow:hidden;
+    margin-bottom: 15px;
+}
+
+/* Style für die Links in der Navigation */
+.topnav a{
+    /* float: Ausrichtung des Elements an das Elternelement - Rechts oder linksbündig */
+    float: left;
+    /* Padding: Top, Right, bottom, left */
+    /* Padding: Nicht angegeben Werte werden gleichgesetzt wie das gegenüberliegende */
+    padding: 14px 16px 14px 16px;
+    /* Keine Decoration für die Link-Anzeige */
+    text-decoration:none;
+    font-size: 17px;
+    display: block;
+    color: white;
+    text-align: center;
+}
+
+/* Style für das Mouseover auf Links */
+.topnav a:hover{
+    background-color: white;
+    color: black;
+}
+
+/* Den aktiven Link markieren */
+.topnav a.active{
+    background-color: green;
+    color: white;
+}
+
+/* Verstecken des Icons für kleine Bildschirme, wenn ein großer Bildschirm verwendet wird */
+.topnav .icon{
+    display: none;
+}
+
+/* Das verhindert, dass Elemente die nicht in den Zeilen bzw. Zellen sind, die Zeilen überlagern */
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+    margin-bottom: 20px;
+}
+
+/* Die Größe aller Zellen auf 100% Breite einstellen - Mobile first. Siehe weiter unten */
+[class*="col-"]{
+    width: 100%;
+    float: left;
+    padding: 5px;
+}
+
+.card-column{
+    width: 33.33%;
+    float: left;
+    padding: 0 10px;
+}
+
+/* Style für das anzeigen von 'Karten' */
+.card{
+    text-align: center;
+    /* box-shadow: vertical, horizontal, blur(wisch-effect), farbe */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 2);
+    font-family: Arial;
+    padding: 1px;
+}
+
+/* Style für Produkt-Preise */
+.price{
+    color: grey;
+    font-size: 22px;
+}
+
+/* Style für einen Button in der Karte */
+.card button{
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    width: 100%;
+    font-size: 18px;
+    /* Ändert den Mauszeiger beim Hovern über den Button */
+    cursor: pointer;
+}
+
+.card button:hover{
+    opacity: 0.7;
+}
+
+/* Buttons für das Accordion */
+.accordion{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    text-align: left;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+/* Mouseover-Style und active für Accordion-Button */
+.accordion:hover .accordion-active{
+    background-color: white;
+    color: black;
+}
+
+/* Standardmäßiges Ausblenden des Accordion-Inhaltes */
+.accordion-panel{
+    display: none;
+    overflow: hidden;
+}
+
+.accordion::after{
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+    /* Unicode character für "plus" (+) */
+    content: "\002B";
+}
+
+.accordion-active:after{
+    /* Unicode für "minus" (-) */
+    content: "\2796";
+}
+
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+}
+
+/* Wenn der Bildschirm kleiner als 600Pixel breit ist.
+Dann sollen alle links ausgeblendet werden, ausser dem ersten Eintrag.
+Das Icon soll angezeigt werden*/
+@media screen and (max-width: 600px){
+    /* Alles was nicht das erste Kind-Element vom typ <a> ist, soll ausgeblendet werden */
+    .topnav a:not(:first-child) { display: none;}
+    .topnav a.icon{
+        float: right;
+        display: block;
+    }
+    .card-column{
+        width: 100%;
+        display: block;
+        margin-bottom: 10px;
+    }
+    .row::after{
+        margin-bottom: 0px;
+    }
+}
+
+/* Die Klasse "responsive" wird von JS/JQuery hinzugefügt, wenn auf das Icon geklickt wird.
+Dann werden die links vertikal angeordnet, anstatt horizontal */
+@media screen and (max-width: 600px){
+    /* Position - Setz die Positionierung von Elementen. 
+    Absolute = Wir müssen die genaue angabe machen, wo das Element sein soll 
+    Relative = Bezieht sich auf die normale Position */
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon{
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+/* Skalieren der einzelnen Zellen auf deren Bruchteil-Angabe von 100%. Eine komplette Zeile besteht aus 12 Zellen  */
+@media only screen and (min-width: 600px){
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+/* display:block / display:inline */
+/* Block benutzt eine neue Zeile und die gesamte verfügbare Breite */
+
+/* Inline ist in derselben Zeile und nutzt nur soviel Breite wie nötig */
