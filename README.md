@@ -7,11 +7,14 @@ In dieser Übersicht werden sie die jeweiligen Aktuellen Aufgaben für den Nachm
 > Java SE 8 Standard-Bibliothek: http://openbook.rheinwerk-verlag.de/java8/    
 
 ## Anmerkung zu allen Aufgaben
-### !Beachten Sie dabei, dass alle Aufgaben eigene Klassen sind!
-### !Verwenden Sie sinnvolle und aussagekräftige Namen für die Klassen, Attribute und Methoden!
 
-# Aufgaben zum 16.12.2020:
+# Aufgaben zum 26.01.2021:
 
 ## Aufgabe 1:
-> Eine GUI zu der Pizza erstellen
+> Klausurvorbereitung/Aufgaben/Berechnungen_Verzweigungen_01.pdf
 
+## Aufgabe 2:
+> Klausurvorbereitung/Aufgaben/Berechnungen_Verzweigungen_02.pdf
+
+## Aufgabe 3:
+> Klausurvorbereitung/Aufgaben/Berechnungen_Verzweigungen_04.pdf
