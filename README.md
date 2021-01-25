@@ -18,3 +18,8 @@ In dieser Übersicht werden sie die jeweiligen Aktuellen Aufgaben für den Nachm
 
 ## Aufgabe 3:
 > Klausurvorbereitung/Aufgaben/Berechnungen_Verzweigungen_04.pdf
+
+
+
+## Zusatzaufgabe:
+> Die Aufgaben der Arbeitsblätter als eigenen Klassen implementieren.
