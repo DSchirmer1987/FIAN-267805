@@ -13,9 +13,5 @@ In dieser Übersicht werden sie die jeweiligen Aktuellen Aufgaben für den Nachm
 ## Aufgabe 1:
 > Klausurvorbereitung/Aufgaben/Klassen Objekte I.pdf
 
-## Aufgabe 2:
-> Klausurvorbereitung/Aufgaben/Strings - Switch.pdf
-
-
 ## Zusatzaufgabe:
 > Die Aufgaben der Arbeitsblätter als eigenen Klassen implementieren.
