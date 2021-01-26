@@ -18,7 +18,13 @@ public class Adress {
 	private String ort;
 	
 	public Adress() {
-		
+		super();
+		this.vorname = "Max";
+		this.nachname = "Mustermann";
+		this.strasse = "Musterstraße";
+		this.hausnummer = 1;
+		this.plz = 12345;
+		this.ort = "Musterhausen";
 	}
 
 	public Adress(String vorname, String nachname, String strasse, int hausnummer, int plz, String ort) {

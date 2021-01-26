@@ -19,7 +19,17 @@ public class MotorVehicle {
 	private Adress fromAdresse;
 	private Adress toAdresse;
 	
-	public MotorVehicle() {}
+	public MotorVehicle() {
+		super();
+		this.width = 150;
+		this.height = 150;
+		this.length = 150;
+		this.weight = 1000;
+		this.carBrand = "VW";
+		this.customer = "Kunde";
+		this.fromAdresse = new Adress();
+		this.toAdresse = new Adress();
+	}
 
 	public MotorVehicle(double width, double height, double length, int weight, String carBrand, String customer,
 			Adress fromAdresse, Adress toAdresse) {
