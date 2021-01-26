@@ -87,8 +87,7 @@ public class Adress {
 
 	@Override
 	public String toString() {
-		return "Adresse [vorname=" + vorname + ", nachname=" + nachname + ", strasse=" + strasse + ", hausnummer="
-				+ hausnummer + ", plz=" + plz + ", ort=" + ort + "]";
+		return "Adresse [" +this.printAddress()+ "]";
 	};
 	
 	public String printAddress() {

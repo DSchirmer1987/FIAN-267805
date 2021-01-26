@@ -110,9 +110,7 @@ public class MotorVehicle {
 
 	@Override
 	public String toString() {
-		return "MotorVehicle [width=" + width + ", height=" + height + ", length=" + length + ", weight=" + weight
-				+ ", carBrand=" + carBrand + ", customer=" + customer + ", fromAdresse=" + fromAdresse + ", toAdresse="
-				+ toAdresse + "]";
+		return this.printMotorVehicle();
 	}
 	
 	public String printMotorVehicle() {
