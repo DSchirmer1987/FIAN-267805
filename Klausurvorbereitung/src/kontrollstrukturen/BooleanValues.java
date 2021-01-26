@@ -44,6 +44,11 @@ public class BooleanValues {
 		 * c) 25 - 1
 		 * d) 1 - 24
 		 */
+		
+		float kg = 90.5f;
+		float m = 1.90f;
+		
+		System.out.println( kg / (m*m) );
 	}
 
 }
