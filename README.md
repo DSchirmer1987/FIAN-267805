@@ -11,14 +11,10 @@ In dieser Übersicht werden sie die jeweiligen Aktuellen Aufgaben für den Nachm
 # Aufgaben zum 26.01.2021:
 
 ## Aufgabe 1:
-> Klausurvorbereitung/Aufgaben/Berechnungen_Verzweigungen_01.pdf
+> Klausurvorbereitung/Aufgaben/Klassen Objekte I.pdf
 
 ## Aufgabe 2:
-> Klausurvorbereitung/Aufgaben/Berechnungen_Verzweigungen_02.pdf
-
-## Aufgabe 3:
-> Klausurvorbereitung/Aufgaben/Berechnungen_Verzweigungen_04.pdf
-
+> Klausurvorbereitung/Aufgaben/Strings - Switch.pdf
 
 
 ## Zusatzaufgabe:
