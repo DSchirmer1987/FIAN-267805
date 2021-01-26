@@ -14,5 +14,9 @@ public class App {
 		rabattrechner.werteEingeben();
 		System.out.println(rabattrechner.ausrechnenGesamtpreis());
 	}
+	
+	public static void prozedur() {
+		System.out.println("Ich bin eine Prozedur");
+	}
 
 }
