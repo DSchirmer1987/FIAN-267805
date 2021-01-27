@@ -1,0 +1,43 @@
+Beispielfragen zu Interface / Abstrakte Klassen
+
+
+Folgendes ist gegeben:
+public interface IFressbar{
+	public void fressen(){
+		System.out.println("Ich werde gefressen");
+	}
+}
+
+Ist dies ein korrektes Interface?
+
+a) Ja
+b) Nein
+------
+Folgendes ist gegeben:
+public interface IFressbar{
+	default void fressen(){
+		System.out.println("Ich werde gefressen");
+	}
+}
+
+Ist dies ein korrektes Interface?
+
+a) Ja
+b) Nein
+-----
+
+Folgendes ist gegeben:
+public abstract class AAuto{
+	public abstract void fahren();
+	public abstract void gehen();
+	public String modellAuslesen(){
+		System.out.println("Modell");
+	}
+	public abstract String print();
+}
+Welche Methoden (Zeilennummer) müsste eine erbende nicht-abstrakte Klasse implementieren?
+a) 31
+b) 32
+c) 33
+d) 36
+-----

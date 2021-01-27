@@ -51,9 +51,22 @@ public class Punkt {
 			System.exit (1);
 		}
 	}
+	
+	public Punkt(String eingabe) {
+		super();
+//		this(); Es geht nur super() oder this()
+	}
 
 	@Override
 	public String toString() {
 		return "Punkt [x=" + x + ", y=" + y + "]";
+	}
+	
+	public String meinToString() {
+		return this.toString();
+	}
+	
+	public String oberToString() {
+		return super.toString();
 	}
 }
