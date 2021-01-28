@@ -41,10 +41,10 @@ public class Auto {
 	/**
 	 * Der Default-Konstruktor für das Auto
 	 */
-	public Auto() {
-		this.setName("VW");
-		this.setPs(150);
-	}
+//	public Auto() {
+//		this.setName("VW");
+//		this.setPs(150);
+//	}
 	
 	/**
 	 * Der parametrisiere Konstruktor für das Auto

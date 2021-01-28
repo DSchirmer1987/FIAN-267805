@@ -15,6 +15,7 @@ public class Start {
 		System.out.println(car);
 		System.out.println(car.equals(car2));
 		System.out.println(car == car2);
+		
 	}
 
 }

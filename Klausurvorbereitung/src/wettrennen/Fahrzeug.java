@@ -17,7 +17,6 @@ public class Fahrzeug {
 	private String bezeichnung;
 	
 	public Fahrzeug() {
-		super();
 		this.position = 0;
 		this.geschwindigkeit = 0;
 		this.maxGeschwindigkeit = 0;
