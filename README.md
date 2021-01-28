@@ -12,7 +12,7 @@ In dieser Übersicht werden sie die jeweiligen Aktuellen Aufgaben für den Nachm
 
 ## Aufgabe 1:
 > Klausurvorbereitung/Aufgaben/Pizza.pdf
-Als eigenständiges Projekt in Eclipse
+> Als eigenständiges Projekt in Eclipse
 
 ## Zusatzaufgabe:
 > Die Aufgaben der Arbeitsblätter als eigenen Klassen implementieren.
