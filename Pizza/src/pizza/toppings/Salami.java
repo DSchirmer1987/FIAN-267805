@@ -10,6 +10,7 @@
 package pizza.toppings;
 
 import pizza.Pizza;
+import pizza.bottoms.Bottom;
 
 public class Salami extends Topping {
 
@@ -20,8 +21,7 @@ public class Salami extends Topping {
 
 	@Override
 	public int getPrice() {
-		// TODO Auto-generated method stub
-		return 225;
+		return this.getBelow().getPrice() + 225;
 	}
 
 	@Override
@@ -32,8 +32,15 @@ public class Salami extends Topping {
 
 	@Override
 	public boolean isHot() {
-		// TODO Auto-generated method stub
-		return true;
+		if(this.getBelow() instanceof Bottom ) {
+			return false;
+		}else if (this.getBelow() instanceof Salami) {
+			return true;
+		} else if( this.getBelow() instanceof Chili) {
+			return true;
+		} else {
+			return false;
+		}
 	}
 
 }

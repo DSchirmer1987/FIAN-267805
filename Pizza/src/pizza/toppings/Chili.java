@@ -10,30 +10,35 @@
 package pizza.toppings;
 
 import pizza.Pizza;
+import pizza.bottoms.Bottom;
 
 public class Chili extends Topping {
 
 	public Chili(Pizza below) {
 		super(below);
-		// TODO Auto-generated constructor stub
 	}
 
 	@Override
 	public int getPrice() {
-		// TODO Auto-generated method stub
-		return 95;
+		return this.getBelow().getPrice() + 225;
 	}
 
 	@Override
 	public boolean isVegetable() {
-		// TODO Auto-generated method stub
 		return true;
 	}
 
 	@Override
 	public boolean isHot() {
-		// TODO Auto-generated method stub
-		return true;
+		if(this.getBelow() instanceof Bottom ) {
+			return false;
+		}else if (this.getBelow() instanceof Salami) {
+			return true;
+		} else if( this.getBelow() instanceof Chili) {
+			return true;
+		} else {
+			return false;
+		}
 	}
 
 }
