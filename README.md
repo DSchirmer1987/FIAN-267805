@@ -8,12 +8,10 @@ In dieser Übersicht werden sie die jeweiligen Aktuellen Aufgaben für den Nachm
 
 ## Anmerkung zu allen Aufgaben
 
-# Aufgaben zum 29.01.2021:
+# Aufgaben zum 01.02.2021:
 
 ## Aufgabe 1:
-> Klausurvorbereitung/Aufgaben/Pizza.pdf
-
-> Als eigenständiges Projekt in Eclipse
+> Klausurvorbereitung/Aufgaben/Polymorphie Geometrie.pdf
 
 ## Zusatzaufgabe:
 > Die Aufgaben der Arbeitsblätter als eigenen Klassen implementieren.
