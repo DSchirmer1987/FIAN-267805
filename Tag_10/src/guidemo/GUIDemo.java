@@ -10,11 +10,13 @@
 package guidemo;
 
 import java.awt.Frame;
+import java.awt.Label;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 
 public class GUIDemo {
 
@@ -38,9 +40,12 @@ public class GUIDemo {
 //			}
 //		});
 		
+		Label label = new Label("Label");
+		
 		button.addActionListener(e -> System.out.println("Gedrückt"));
 		
 		jframe.add(button);
+		jframe.add(label);
 		jframe.setSize(300, 200);
 		jframe.setVisible(true);
 	}
