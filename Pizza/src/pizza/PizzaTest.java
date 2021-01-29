@@ -5,7 +5,7 @@ import pizza.toppings.Chili;
 import pizza.toppings.Salami;
 
 public class PizzaTest {
-
+	private int zahl;
 	public static void main(String[] args) {
 		/*
 		 * Erst alle un-scharfen vegetarischen Auflagen
@@ -22,6 +22,8 @@ public class PizzaTest {
 		System.out.println(pizza.getPrice());
 		System.out.println(pizza.isVegetable());
 		System.out.println(pizza.isHot());
+		
+
 	}
 
 }
