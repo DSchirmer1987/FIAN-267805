@@ -14,6 +14,11 @@ public class Beispiel {
 		for (boolean j : array3) {
 			System.out.println(j);
 		}
+		
+		int zahl = 5;
+		int zweiteZahl = 10;
+		System.out.println(zahl % zweiteZahl);
+
 	}
 	
 	public static void unreachable(int i) {
