@@ -7,15 +7,19 @@ public class Beispiel {
 		System.out.println(i|=5);
 		System.out.println(i<<=5);
 		System.out.println(i>>=5);
+		
+		int[] array1 = new int[5];
+		String[] array2 = new String[5];
+		boolean[] array3 = new boolean[5];
+		for (boolean j : array3) {
+			System.out.println(j);
+		}
 	}
 	
-	public static int unreachable(int i) {
-		if (i <= 5) {
-			return i;
-		} else if ( i == 5) {
-			return i;
+	public static void unreachable(int i) {
+		for(int j = 5; j<5;j++) {
+			System.out.println("Klein");
 		}
-		return i;
 	}
 
 }
