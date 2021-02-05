@@ -1,6 +1,9 @@
 package pizza;
 
+import pizza.bottoms.Bottom;
 import pizza.bottoms.Crusty;
+import pizza.bottoms.CuscinoSpeciale;
+import pizza.bottoms.Munchy;
 import pizza.toppings.Chili;
 import pizza.toppings.Salami;
 
@@ -14,16 +17,19 @@ public class PizzaTest {
 		 * 
 		 */
 		
-		Pizza pizza = new Crusty();
-		pizza = new Chili(pizza);
-		pizza = new Salami(pizza);
+		Crusty cr = new Crusty();
+		Munchy m = new Munchy();
+		CuscinoSpeciale cs = new CuscinoSpeciale();
 		
-		System.out.println("Als ein Objekt");
-		System.out.println(pizza.getPrice());
-		System.out.println(pizza.isVegetable());
-		System.out.println(pizza.isHot());
+		Bottom[] bottoms = new Bottom[3];
 		
-
+		bottoms[0] = cr;
+		bottoms[1] = m;
+		bottoms[2] = cs;
+		
+		for (Bottom bottom : bottoms) {
+			bottom.setAlter(5);
+		}
 	}
 
 }
